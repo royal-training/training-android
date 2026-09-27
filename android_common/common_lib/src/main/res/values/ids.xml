@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2010-2021 QinPing Peng. All Rights Reserved.
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~
+  -->
+
+<resources>
+    <item type="id" name="refresh_layout"/>
+    <item type="id" name="title_view"/>
+    <item type="id" name="state_view"/>
+</resources>

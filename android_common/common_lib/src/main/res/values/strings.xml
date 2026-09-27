@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="state_loading">Loading … </string>
+    <string name="state_empty">No Data</string>
+    <string name="state_error">Error!</string>
+    <string name="state_network_disable">No Connection</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_ok">Ok</string>
+
+</resources>

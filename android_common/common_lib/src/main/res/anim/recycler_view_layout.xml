@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2010-2020 QinPing Peng. All Rights Reserved.
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~
+  -->
+<layoutAnimation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:animation="@anim/recycler_view_set"
+    android:animationOrder="normal"
+    android:delay="0.1">
+</layoutAnimation>

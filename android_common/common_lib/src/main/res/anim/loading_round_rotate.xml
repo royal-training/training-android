@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright © 2010-2020 QinPing Peng. All Rights Reserved.
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~
+  -->
+<!--fromDegrees:0  toDegrees: 359,  0~359防止卡顿-->
+<!-- pivotX, pivotY = 50% 设置旋转中心点为控件中心-->
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <rotate
+        android:duration="1000"
+        android:fromDegrees="0"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:repeatCount="-1"
+        android:toDegrees="359" /> <!--设置不断旋转-->
+</set>

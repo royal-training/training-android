@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="base_primary">#EC6F54</color>
+    <color name="base_primary_button">#D94020</color>
+    <color name="base_primary_light">#EC907C</color>
+    <color name="base_primary_dark">#90220B</color>
+    <color name="base_primary_important">#A54C3A</color>
+    <color name="divider">#f5f5f5</color>
+    <color name="font_primary">#333333</color>
+    <color name="c3f">#3f3f3f</color>
+    <color name="base_primary_light_half_translate">#80EC907C</color>
+    <color name="base_primary_light_third_translate">#40EC907C</color>
+    <color name="base_primary_light_eighth">#A1EC907C</color>
+</resources>

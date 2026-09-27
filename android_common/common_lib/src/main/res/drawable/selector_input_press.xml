@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright © 2010-2020 QinPing Peng. All Rights Reserved.
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:drawable="@drawable/bg_radius_theme_focus" android:state_focused="true" />
+<item android:drawable="@drawable/bg_radius_theme_normal" android:state_focused="false" />
+<item android:drawable="@drawable/bg_radius_theme_focus" android:state_pressed="true" />
+<item android:drawable="@drawable/bg_radius_theme_normal" android:state_pressed="false" />
+<item android:drawable="@drawable/bg_radius_theme_normal" />
+</selector>

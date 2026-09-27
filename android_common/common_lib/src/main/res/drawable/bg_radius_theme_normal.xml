@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright © 2010-2020 QinPing Peng. All Rights Reserved.
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~
+  -->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/dp_6" />
+    <solid android:color="@color/divider"/>
+</shape>

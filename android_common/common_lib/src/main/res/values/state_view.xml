@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2010-2020 QinPing Peng. All Rights Reserved.
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~
+  -->
+
+<resources>
+    <declare-styleable name="StateView">
+        <attr name="android:textColor" format="color"/>
+        <attr name="android:textSize" format="dimension"/>
+        <attr name="android:background" format="reference"/>
+        <attr name="state_loading_drawable" format="reference"/>
+        <attr name="state_loading_string" format="reference"/>
+        <attr name="state_empty_drawable" format="reference"/>
+        <attr name="state_empty_string" format="string"/>
+        <attr name="state_error_drawable" format="reference"/>
+        <attr name="state_error_string" format="string"/>
+        <attr name="state_network_drawable" format="reference"/>
+        <attr name="state_network_string" format="string"/>
+    </declare-styleable>
+</resources>

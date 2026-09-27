@@ -1,0 +1,163 @@
+/**
+ * 1. 在 project 的 build.gradle 中
+ * 头部加入 apply from: "../config.gradle" //头部这里是给所有的submodule 使用
+ * 2. 在 project 的 build.gradle 中 的 buildscript
+ * 中加入 是给 项目的 build.gralde 中 使用的
+ * For Example:
+ * <pre>
+ apply from: "../config.gradle"
+ buildscript {// 这里引入是给 项目根目录编译使用
+ apply from: "../config.gradle"}* </pre>
+ */
+ext {
+
+    config = [
+
+            PACKAGE: [
+                    xiaomi: 'com.app.xiami',
+                    oppo  : 'com.app.oppo'
+            ],
+
+            HOST       : [
+                    xiaomi: 'www.xiaomi.com',
+                    oppo  : 'www.oppo.com'
+            ]
+    ]
+    // module and application android config
+    //
+    // For example :
+    // buildToolsVersion android.buildToolsVersion
+    // compileSdkVersion android.compileSdkVersion
+    // minSdkVersion android.minSdkVersion
+    // targetSdkVersion android.targetSdkVersion
+    // classpath:
+
+    android_plugin_gradle = '7.4.2'
+    android = [
+            buildToolsVersion: "23.0.0",
+            compileSdkVersion: 28,
+            minSdkVersion    : 17,
+            targetSdkVersion : 28,
+            gradle_plugin    : "com.android.tools.build:gradle:$android_plugin_gradle",
+    ]
+
+
+    //
+    // For Example:
+    // maven {url repos.aliyunJcenter}
+    // maven {url repos.aliyunGoogle}
+    // maven {url repos.jitpack}
+    repos = [
+            aliyunJcenter: 'https://maven.aliyun.com/repository/jcenter',
+            aliyunGoogle : 'https://maven.aliyun.com/repository/google',
+            jitpack      : 'https://jitpack.io',
+    ]
+
+
+    butterknife_version = "10.1.0"
+    butterknife = [
+            main         : "com.jakewharton:butterknife:$butterknife_version",
+            compiler     : "com.jakewharton:butterknife-compiler:$butterknife_version",
+            gradle_plugin: "com.jakewharton:butterknife-gradle-plugin:$butterknife_version",
+    ]
+
+    //
+    //
+    leakcanary_version = "1.3.1"
+    leakcanary = [
+            main : "com.squareup.leakcanary:leakcanary-android:$leakcanary_version",
+            no_op: "com.squareup.leakcanary:leakcanary-android-no-op:$leakcanary_version"
+    ]
+
+    okhttp = [
+            main: "com.squareup.okhttp:okhttp:2.6.0"
+    ]
+
+    // AndroidX
+    //    implementation androidx.appcompat
+    //    implementation androidx.core_ktx
+    //    implementation androidx.fragment_ktx
+    //    implementation androidx.recycler_view
+    //    implementation androidx.recycler_selection
+    androidx = [
+            appcompat         : 'androidx.appcompat:appcompat:1.1.0',
+            core_ktx          : 'androidx.core:core-ktx:1.2.0',
+            fragment_ktx      : 'androidx.fragment:fragment-ktx:1.2.0',
+
+            recycler_view     : 'androidx.recyclerview:recyclerview:1.1.0',
+            recycler_selection: "androidx.recyclerview:recyclerview-selection:1.0.0",
+
+            constraintlayout  : 'androidx.constraintlayout:constraintlayout:1.1.3',
+            coordinatorlayout : 'androidx.coordinatorlayout:coordinatorlayout:1.1.0',
+
+            material          : 'com.google.android.material:material:1.1.0'
+    ]
+
+    //
+    //For Example:
+    // classpath kotlin.gradle_plugin
+    // implementation kotlin.stdlib
+    kotlin_version = '1.6.21'
+    kotlin = [
+            gradle_plugin: "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version",
+            stdlib       : "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    ]
+
+    // For Example:
+    //implementation room.room_runtime
+    //implementation room.room_ktx
+    //implementation room.room_rxjava2
+    //kapt room.room_ktx
+    room_version = "2.2.4"
+    room = [
+            room_runtime : "androidx.room:room-runtime:$room_version",
+            // For Kotlin use kapt instead of annotationProcessor
+            room_compiler: "androidx.room:room-compiler:$room_version",
+            // optional - Kotlin Extensions and Coroutines support for Room
+            room_ktx     : "androidx.room:room-ktx:$room_version",
+            // optional - RxJava support for Room
+            room_rxjava2 : "androidx.room:room-rxjava2:$room_version"
+    ]
+
+    lifecycle_vesion = "2.2.0"
+    lifecycle = [
+            main         : "androidx.lifecycle:lifecycle-extensions:$lifecycle_vesion",
+            viewmodel_ktx: "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_vesion"
+    ]
+
+    rx = [
+            rxandroid: "io.reactivex.rxjava2:rxandroid:2.1.1",
+            rxJava   : 'io.reactivex.rxjava2:rxjava:2.2.9'
+    ]
+
+    // Third dependencies
+    // For Example
+    // implementation third.BaseRecyclerViewAdapterHelper
+    // api third.SmartRefreshLayout
+    // api third.LoadingView
+    // api third.EasyPermissions
+    third = [
+            BaseRecyclerViewAdapterHelper: 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.50',
+            SmartRefreshLayout           : 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-andx-15',
+            LoadingView                  : "com.wang.avi:library:2.1.3",
+            EasyPermissions              : "pub.devrel:easypermissions:3.0.0",
+            Statusbarutil                : 'com.github.niorgai:StatusBarCompat:2.3.1'
+    ]
+
+
+    // test
+    // For example
+    // testImplementation: test.junit
+    test = [
+            junit: "junit:junit:4.12"
+    ]
+    // androidTestImplementation androidTest.junit
+    // androidTestImplementation androidTest.truth
+    // androidTestImplementation androidTest.espresso_core
+    androidTest = [
+            junit        : "androidx.test.ext:junit:1.1.1",
+            truth        : "androidx.test.ext:truth:1.2.0",
+            espresso_core: 'androidx.test.espresso:espresso-core:3.2.0'
+
+    ]
+}
